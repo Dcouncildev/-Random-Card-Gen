@@ -1,16 +1,25 @@
-@import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-    body{
-        background: #BDBDBD;
-    }
-    
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+import "../style/index.scss";
 
-*/
+window.onload = function() => {
+    document.querySelector('.card').classList.add(generateRandomSuit());
+     document.querySelector('.card').innerHTML = generateRandomNumber();
+
+
+   let generateRandomNumber() => {
+   let numbers =["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+   let indexNumbers = Math.floor(Math.random() + numbers.length);
+   return numbers[indexNumbers];
+
+};
+
+let generateRandomNumber=() => {
+    let numbers =["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    let suit = ["diamond", "spade", "heart", "club"];
+     return numbers[indexNumbers];
+};
+    let generateRandomSuit() => {
+    let indexNumbers = Math.floor(Math.random() + numbers.length);
+    let indexSuit = Math.floor(Math.random() + suit.length);
+    return suit [indexSuit];
+];
