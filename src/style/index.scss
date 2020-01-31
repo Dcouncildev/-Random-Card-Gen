@@ -1,25 +1,35 @@
+body {
+  background: grey;
+}
+.card{
+   text-align: center
+   display: inline-block;
+   background: white;
+   margin: auto;
+   height: 200px;
+   width:  250px 
+   padding: 20px;
+   padding-top: 180px;
+   border: 1px solid black;
+   border-radius: 5px
+   position: relative:
+   &:before{
+    content: '/2660';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;   
+   }
+&:after{
+     content: '/2660';
+     position: absolute;
+     bottom: 20px;
+     right: 20px; 
+    font-size: 80px; 
+   
+    } &.spade:before, &.spade:after{content: '\2660';}
+      &.spade:before, &.club:after{content: '\2660';}
+      &.spade:before, &.heart:after{content: '\2660';}
+      &.spade:before, &.diamond:after{content: '\2660';}
 
-import "../style/index.scss";
-
-window.onload = function() => {
-    document.querySelector('.card').classList.add(generateRandomSuit());
-     document.querySelector('.card').innerHTML = generateRandomNumber();
-
-
-   let generateRandomNumber() => {
-   let numbers =["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
-   let indexNumbers = Math.floor(Math.random() + numbers.length);
-   return numbers[indexNumbers];
-
-};
-
-let generateRandomNumber=() => {
-    let numbers =["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
-    let suit = ["diamond", "spade", "heart", "club"];
-     return numbers[indexNumbers];
-};
-    let generateRandomSuit() => {
-    let indexNumbers = Math.floor(Math.random() + numbers.length);
-    let indexSuit = Math.floor(Math.random() + suit.length);
-    return suit [indexSuit];
-];
+}
