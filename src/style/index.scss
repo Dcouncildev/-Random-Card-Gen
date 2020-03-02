@@ -1,35 +1,103 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
 body {
-  background: grey;
+  background: #0e7e12;
 }
-.card{
-   text-align: center
-   display: inline-block;
-   background: white;
-   margin: auto;
-   height: 200px;
-   width:  250px 
-   padding: 20px;
-   padding-top: 180px;
-   border: 1px solid black;
-   border-radius: 5px
-   position: relative:
-   &:before{
-    content: '/2660';
+
+.card {
+  text-align: center;
+  display: inline-block;
+  background: white;
+  margin: auto;
+  height: 400px;
+  font-size: 80px;
+  width: 250px;
+  padding: 20px;
+  padding-top: 180px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  &:before {
+    content: "\2660";
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 80px;   
-   }
-&:after{
-     content: '/2660';
-     position: absolute;
-     bottom: 20px;
-     right: 20px; 
-    font-size: 80px; 
-   
-    } &.spade:before, &.spade:after{content: '\2660';}
-      &.spade:before, &.club:after{content: '\2660';}
-      &.spade:before, &.heart:after{content: '\2660';}
-      &.spade:before, &.diamond:after{content: '\2660';}
-
+    font-size: 80px;
+  }
+  &:after {
+    content: "\2660";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
 }
+
+// @import "~bootstrap/scss/bootstrap.scss";
+
+// body {
+//   background: #0e7e12;
+//   //   box-sizing: border-box;
+// }
+// .card {
+//   //   text-align: center;
+//   display: inline-block;
+//   background: white;
+//   margin: auto;
+//   height: 400px;
+//   //   font-size: 80px;
+//   width: 250px;
+//   padding: 20px;
+//   //   padding-top: 180px;
+//   border: 1px solid black;
+//   border-radius: 5px;
+//   position: relative;
+//   .top-suit {
+//     position: absolute;
+//     top: 0px;
+//     left: 5px;
+//     // font-size: 80px;
+//   }
+//   .bottom-suit {
+//     position: absolute;
+//     bottom: 0px;
+//     right: 20px;
+//     // font-size: 80px;
+//   }
+//   &.spade:before,
+//   &.spade:after {
+//     content: "\2660";
+//   }
+//   &.club:before,
+//   &.club:after {
+//     content: "\2663";
+//   }
+//   &.heart:before,
+//   &.heart:after {
+//     content: "\2665";
+//     color: red;
+//   }
+//   &.diamond:before,
+//   &.diamond:after {
+//     content: "\2666";
+//     color: red;
+//   }
+// }
